@@ -8,6 +8,7 @@ namespace DigidoktersNieuwBorghysDomain.Business
 {
     public class Controller
     {
+        //CONTROLLER CALLS
         private Persistence.Persistence _Persistence;
         private Overzicht _Overzicht;
 
