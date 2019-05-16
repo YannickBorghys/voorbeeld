@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B32B349-7992-4A06-AE16-4702DD5D2C03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DigidoktersNieuwBorghysForms</RootNamespace>
+    <AssemblyName>DigidoktersNieuwBorghysForms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Klanten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klanten.Designer.cs">
+      <DependentUpon>Klanten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlantenToevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlantenToevoegen.Designer.cs">
+      <DependentUpon>KlantenToevoegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlantenUpdaten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlantenUpdaten.Designer.cs">
+      <DependentUpon>KlantenUpdaten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leerlingen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leerlingen.Designer.cs">
+      <DependentUpon>Leerlingen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeerlingenToevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeerlingenToevoegen.Designer.cs">
+      <DependentUpon>LeerlingenToevoegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeerlingenUpdaten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeerlingenUpdaten.Designer.cs">
+      <DependentUpon>LeerlingenUpdaten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problemen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problemen.Designer.cs">
+      <DependentUpon>Problemen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemenToevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemenToevoegen.Designer.cs">
+      <DependentUpon>ProblemenToevoegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemenUpdaten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemenUpdaten.Designer.cs">
+      <DependentUpon>ProblemenUpdaten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sessies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sessies.Designer.cs">
+      <DependentUpon>Sessies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SessiesToevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessiesToevoegen.Designer.cs">
+      <DependentUpon>SessiesToevoegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SessiesUpdaten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessiesUpdaten.Designer.cs">
+      <DependentUpon>SessiesUpdaten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startpagina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startpagina.Designer.cs">
+      <DependentUpon>Startpagina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Klanten.resx">
+      <DependentUpon>Klanten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlantenToevoegen.resx">
+      <DependentUpon>KlantenToevoegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlantenUpdaten.resx">
+      <DependentUpon>KlantenUpdaten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leerlingen.resx">
+      <DependentUpon>Leerlingen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeerlingenToevoegen.resx">
+      <DependentUpon>LeerlingenToevoegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeerlingenUpdaten.resx">
+      <DependentUpon>LeerlingenUpdaten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problemen.resx">
+      <DependentUpon>Problemen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemenToevoegen.resx">
+      <DependentUpon>ProblemenToevoegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemenUpdaten.resx">
+      <DependentUpon>ProblemenUpdaten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sessies.resx">
+      <DependentUpon>Sessies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessiesToevoegen.resx">
+      <DependentUpon>SessiesToevoegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessiesUpdaten.resx">
+      <DependentUpon>SessiesUpdaten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startpagina.resx">
+      <DependentUpon>Startpagina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DigidoktersNieuwBorghysDomain\DigidoktersNieuwBorghysDomain.csproj">
+      <Project>{20aa8070-a9fa-49e6-8579-0457bf61e71e}</Project>
+      <Name>DigidoktersNieuwBorghysDomain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
